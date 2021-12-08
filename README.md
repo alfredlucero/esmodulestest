@@ -15,6 +15,7 @@ ESModules
 - top level await available in modules to act as big async functions, meaning code can be evaluated before use in parent modules but without blocking sibling modules from loading
 - need to test on server rather than file:// URL due to module security concerns and need server to return back MIME type text/javascript - can do npx serve
 - need to add extension for imports
+- In Node env you can do .mjs for individual files or set type: "module" for entire project in package.json
 - Construction - find, download and parse all of files into module records
   - Figure out where to download the file containing the module from (module resolution)
   - Fetch the file by downloading it from a URL or loading it form the file system
@@ -49,3 +50,4 @@ ESModules
 https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
 https://kentcdodds.com/blog/super-simple-start-to-es-modules-in-the-browser
+https://kentcdodds.com/blog/super-simple-start-to-es-modules-in-node-js
